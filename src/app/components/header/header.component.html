@@ -1,0 +1,71 @@
+<div class="containerHeader text-center ">
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class= "marcoFoto mt-4">
+            <div class="message" id="message" hidden>
+                <p class="p-4 text-message">
+                    My name is = ‘Anderson’ but  You can tell me Kayerson and I’m learning to do this.
+                If (you want to know more about me, I invite you to see my resume) but if
+                 (You want to know my project, GO AHEAD).
+                </p>
+            </div>
+
+            <button (click)="showMessage()" class="image">
+            </button>
+            
+        </div>
+    </div>
+    <button (click)="change()" class="btn btn-success mt-4">{{datosBtn}}</button>
+    <div *ngIf="cambiar; else bloque" >
+            <h3 class="p-4">Desarrollador Web FullStack
+                <p>
+                    en crecimiento, con 1 año de experiencia como analista QA y apoyo  
+                    Frontend en usabilidad con la empresa Indra Colombia en el proyecto 
+                    del Banco de la Republica.
+                </p>
+            </h3>
+
+        <div>
+            <h3>Tecnologías:</h3>
+            <ul class="listTec">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>Ts-Angliar</li>
+                <li>Java-Spring</li>
+                <li>SQL</li>    
+            </ul>
+        </div>
+        <div class="p-4">
+            <h4>Soft skills:</h4>
+            <p>
+                Tengo una Excelente capacidad para trabajar en equipo, 
+                con liderazgo, responsabilidad y colaboración, con habilidad de
+                adaptación a nuevos entornos y actividades, siempre dispuesto a aprender y afrontar nuevos retos.
+
+            </p>
+            <h2>Anderson Castillo</h2>
+        </div>
+
+    </div>
+
+  <!--  aqui va la otra parte del menu  -->
+    <ng-template #bloque>
+        <div class=" d-flex  flex-column p-5">
+            <button class="btn btn-success mt-4">INICIO</button>
+        <button class="btn btn-success mt-4">PROYECTOS</button>
+        <button class="btn btn-success mt-4">SOBRE MI</button>
+        <button class="btn btn-success mt-4">CONTACTO</button>
+    </div>
+    
+        
+    
+    
+  
+    </ng-template>
+    <div class="footer">
+        
+    </div>
+</div>

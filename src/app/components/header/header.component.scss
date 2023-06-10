@@ -1,0 +1,48 @@
+.containerHeader{
+    background-color: #C7D2B7;
+    width: 320px;
+    height: 100%;
+    min-height: 950px;
+
+}
+.marcoFoto{
+    background-color: #798C5E;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+        .image{
+            top: 0;
+            right: 0;
+            position: absolute;
+            height: 200px;
+            width: 190px;
+            background-image: url(../../imges/person.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+        }
+        .message{
+            height: 200px;
+            width: 600px;
+            position: relative;
+            left: 100px;
+            background-color: #798C5E;
+            border-radius: 0px 30px 30px 0px;
+        }
+        .message{
+            padding-left: 50%;
+        }
+.listTec{
+    list-style: none;
+}
+.btn{
+    background-color: #798C5E;
+}
+
+.footer{
+    position: relative;
+    bottom:0px;
+}
